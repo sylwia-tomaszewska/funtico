@@ -1,12 +1,10 @@
-import { css } from 'styled-components';
-
 export const colors = {
-  dark: '#0a0911',
-  light: '#ffffff',
-  primary: '#171717',
-  secondary: '#8941e6',
-  tertiary: '#2ef5f5',
-  accent: '#03fa2e',
+  dark: 'hsl(248, 31%, 5%)',
+  light: 'hsl(0, 0%, 100%)',
+  primary: 'hsl(0, 0%, 9%)',
+  secondary: 'hsl(266, 77%, 58%)',
+  tertiary: 'hsl(180, 91%, 57%)',
+  accent: 'hsl(130, 98%, 50%)',
 };
 
 export const lineHeights = {
@@ -14,9 +12,3 @@ export const lineHeights = {
   sm: '1.3',
   md: '1.6',
 };
-
-export const maxWidth = (media: string, children: string) => css`
-  @media only screen and (max-width: ${media}) {
-    ${children}
-  }
-`;
